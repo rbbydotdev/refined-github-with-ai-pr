@@ -1,0 +1,29 @@
+readme.md
+  32e51c15c7c3d3e2 237-238
+build/features.test.ts
+  32e51c15c7c3d3e2 36
+source/features/pr-git-notes-files.gql
+  32e51c15c7c3d3e2 1-13
+source/features/pr-git-notes.tsx
+  32e51c15c7c3d3e2 35-36,49-55,259-301,308,311,313,323-325,327-328,330,332,334,379,381,390,394,399,401,403,405,463,465,491,493,619-620,675-682
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "154afeaf0b1b3e61f4b3c3bf73488446730f1fa1",
+  "prompts": {
+    "32e51c15c7c3d3e2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ea11fd6b-fa72-4424-ac52-f3209b940659",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 110,
+      "total_deletions": 65,
+      "accepted_lines": 102,
+      "overriden_lines": 0
+    }
+  }
+}
