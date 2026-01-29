@@ -1,0 +1,69 @@
+source/features/pr-git-notes.tsx
+  2577377dcbeaa9b1 19-24,26,28-39,41-43,45,129,163-166,168-170,173,184-185,187,193-195,225-232,247-248,250,263-264,303,306-308,313,327-332
+  c33ed7113ae82aa0 17-18,25,46,51,61-74,76-80,83-100,102-109,111-128,167,172,174,176,179,189,197-211,214-221,224,246,249,251-254,256-262,265-267,269-284,286-290,292-293,295-302,305,318
+  e322c501aa399f3d 177-178,186,188,190
+  36f2d92f14be0348 1-16,40,44,47-50,52-60,75,81-82,101,110,130-162,171,183,196,212-213,233-245,255,268,285,291,309-312,314-317,319-326
+source/features/pr-git-notes.css
+  c33ed7113ae82aa0 1-35
+source/refined-github.ts
+  e322c501aa399f3d 225
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "e36c602b5576176c7eb2c90afca90d578ed4aa79",
+  "prompts": {
+    "2577377dcbeaa9b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bfddf17b-2340-41d9-9493-c975a45c55fa",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 62,
+      "overriden_lines": 0
+    },
+    "36f2d92f14be0348": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d167907d-d427-4154-9064-c5a3217afe71",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 164,
+      "total_deletions": 249,
+      "accepted_lines": 107,
+      "overriden_lines": 0
+    },
+    "c33ed7113ae82aa0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c836f94a-86e6-4fa9-abb3-b5d21a0f7349",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 182,
+      "overriden_lines": 1
+    },
+    "e322c501aa399f3d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4323cc6-91a2-438b-847b-6e7ad37fa311",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 6,
+      "overriden_lines": 0
+    }
+  }
+}
