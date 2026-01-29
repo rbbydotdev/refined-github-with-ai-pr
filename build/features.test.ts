@@ -33,6 +33,7 @@ const noScreenshotExceptions = new Set([
 	'hide-inactive-deployments', // TODO: side-by-side png
 	'esc-to-deselect-line', // TODO Add gif with key overlay
 	'scrollable-areas', // TODO: Add side-by-side png
+	'pr-git-ai', // TODO: Add screenshot showing AI indicators
 ]);
 
 const entryPoint = 'source/refined-github.ts';

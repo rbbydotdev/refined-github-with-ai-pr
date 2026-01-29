@@ -1,0 +1,13 @@
+query GetPrFileStats($owner: String!, $name: String!, $prNumber: Int!) {
+	repository(owner: $owner, name: $name) {
+		pullRequest(number: $prNumber) {
+			files(first: 100) {
+				nodes {
+					path
+					additions
+					deletions
+				}
+			}
+		}
+	}
+}

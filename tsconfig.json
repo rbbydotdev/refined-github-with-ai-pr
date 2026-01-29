@@ -19,6 +19,12 @@
 			"ES2024"
 		]
 	},
+	"exclude": [
+		"node_modules",
+		"distribution",
+		"dist",
+		"build"
+	],
 	"include": [
 		"source",
 		"test",

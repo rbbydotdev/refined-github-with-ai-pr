@@ -1,0 +1,131 @@
+/* AI-generated line indicators */
+
+/* Subtle background highlight for AI-generated additions (green/lime) */
+@media (prefers-color-scheme: light) {
+	tr[data-rgh-ai-generated='true'][data-rgh-ai-type='addition'] {
+		background-color: #5bfe8c !important;
+	}
+
+	tr[data-rgh-ai-generated='true'][data-rgh-ai-type='deletion'] {
+		background-color: #fabfe1 !important; 
+	}
+}
+
+/* Unset all children element background colors */
+tr[data-rgh-ai-generated='true'] td,
+tr[data-rgh-ai-generated='true'] code {
+	background-color: unset !important;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	tr[data-rgh-ai-generated='true'][data-rgh-ai-type='addition'] {
+		background-color: #22543d !important; 
+	}
+
+	tr[data-rgh-ai-generated='true'][data-rgh-ai-type='deletion'] {
+		background-color: #541e4e !important; 
+	}
+
+	tr[data-rgh-ai-generated='true'] td,
+	tr[data-rgh-ai-generated='true'] code {
+		background-color: unset !important;
+	}
+}
+
+/* AI indicator icon in line number cell */
+.rgh-ai-indicator {
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 4px;
+	font-size: 11px;
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+/* Show indicator more prominently on hover */
+tr[data-rgh-ai-generated='true']:hover .rgh-ai-indicator {
+	opacity: 1;
+}
+
+/* In split diff view, we have less space */
+.file-diff-split .rgh-ai-indicator {
+	right: calc(100% + 2px);
+}
+
+/* AI/Human percentage indicator in file header */
+.rgh-ai-percentage-indicator {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: 12px;
+	padding: 2px 8px;
+	border-radius: 4px;
+	font-size: 11px;
+	font-weight: 600;
+	background-color: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+	.rgh-ai-percentage-indicator {
+		background-color: rgba(255, 255, 255, 0.05);
+		border-color: rgba(255, 255, 255, 0.1);
+	}
+}
+
+.rgh-ai-percentage-ai {
+	color: #8b5cf6;
+}
+
+.rgh-ai-percentage-human {
+	color: #10b981;
+}
+
+@media (prefers-color-scheme: dark) {
+	.rgh-ai-percentage-ai {
+		color: #a78bfa;
+	}
+
+	.rgh-ai-percentage-human {
+		color: #34d399;
+	}
+}
+
+/* Ensure the percentage indicator is positioned correctly in the file path section */
+/* Use attribute selector to match the meaningful part of the class name */
+[class*="file-path-section"],
+.file-info {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+/* PR-level total indicator in toolbar */
+.rgh-ai-pr-total-indicator, .rgh-ai-pr-loading-indicator {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 4px 12px;
+	margin-left: 8px;
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: 600;
+	background-color: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+	.rgh-ai-pr-total-indicator, .rgh-ai-pr-loading-indicator {
+		background-color: rgba(255, 255, 255, 0.05);
+		border-color: rgba(255, 255, 255, 0.1);
+	}
+}
+
+.rgh-ai-pr-total-label {
+	font-weight: 500;
+	opacity: 0.7;
+}

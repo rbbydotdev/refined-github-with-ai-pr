@@ -38,7 +38,7 @@
 	},
 	{
 		"id": "batch-mark-files-as-viewed",
-		"description": "Mark/unmark multiple files as “Viewed” in the PR Files tab. Click on the first checkbox you want to mark/unmark and then <code>shift</code>-click another one; all the files between the two checkboxes will be marked/unmarked as “Viewed”.",
+		"description": "Mark/unmark multiple files as \"Viewed\" in the PR Files tab. Click on the first checkbox you want to mark/unmark and then <code>shift</code>-click another one; all the files between the two checkboxes will be marked/unmarked as \"Viewed\".",
 		"screenshot": "https://github-production-user-asset-6210df.s3.amazonaws.com/140871606/257009611-17249bee-d2e2-42ac-bdf0-ebc90029544e.gif"
 	},
 	{
@@ -602,6 +602,12 @@
 		"id": "pr-first-commit-title",
 		"description": "Uses the first commit for a new PR’s title and description.",
 		"screenshot": "https://user-images.githubusercontent.com/16872793/87246205-ccf42400-c419-11ea-86d5-0e6570d99e6e.gif"
+	},
+	{
+		"id": "pr-git-ai",
+		"description": "Shows AI contribution indicators on PR diffs by reading Git AI Standard attribution data from git notes refs.",
+		"css": true,
+		"screenshot": null
 	},
 	{
 		"id": "pr-jump-to-first-non-viewed-file",
