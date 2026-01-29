@@ -1,0 +1,23 @@
+build/features.test.ts
+  32e51c15c7c3d3e2 36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "df5cbedc83d1adb838397dca3de3d1e3f828ecac",
+  "prompts": {
+    "32e51c15c7c3d3e2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ea11fd6b-fa72-4424-ac52-f3209b940659",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
