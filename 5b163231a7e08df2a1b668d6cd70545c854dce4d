@@ -1,0 +1,55 @@
+source/features/pr-git-notes.css
+  c33ed7113ae82aa0 1-35
+source/features/pr-git-notes.tsx
+  e322c501aa399f3d 132-133,136,145,148,150-153,158,330,336-337,341-345,347,350-351
+  2577377dcbeaa9b1 3-8,10,12,17-31,33,116-121,123-125,128,146-147,149,161-163,221-228,231,236,240,257-258,316,319-322,327,329,355-356,379-417
+  c33ed7113ae82aa0 1-2,9,32,34-115,122,126-127,129,131,134,154-155,164-213,220,229-230,232-235,237-239,241-256,259-303,305-315,318,334,357-377
+source/refined-github.ts
+  e322c501aa399f3d 225
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "5b163231a7e08df2a1b668d6cd70545c854dce4d",
+  "prompts": {
+    "2577377dcbeaa9b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bfddf17b-2340-41d9-9493-c975a45c55fa",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 190,
+      "total_deletions": 8,
+      "accepted_lines": 101,
+      "overriden_lines": 4
+    },
+    "c33ed7113ae82aa0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c836f94a-86e6-4fa9-abb3-b5d21a0f7349",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 365,
+      "total_deletions": 127,
+      "accepted_lines": 284,
+      "overriden_lines": 0
+    },
+    "e322c501aa399f3d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4323cc6-91a2-438b-847b-6e7ad37fa311",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 76,
+      "total_deletions": 81,
+      "accepted_lines": 22,
+      "overriden_lines": 3
+    }
+  }
+}
