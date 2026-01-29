@@ -1,0 +1,23 @@
+source/features/pr-git-notes.tsx
+  255c2f532949f43b 196-197,206-212,214-219,257-258,260,267,273,278,300,304-305,308
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "3ca0da4e3780bb9735f9cf3fc88613971f72292e",
+  "prompts": {
+    "255c2f532949f43b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5dd2bb3f-959f-4b20-a841-120d5a7b289c",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 26,
+      "total_deletions": 10,
+      "accepted_lines": 25,
+      "overriden_lines": 0
+    }
+  }
+}
