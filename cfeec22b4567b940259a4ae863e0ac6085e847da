@@ -1,0 +1,23 @@
+readme.md
+  f769bb25841b7341 1,3-11,13,15,26,28,30,32-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "cfeec22b4567b940259a4ae863e0ac6085e847da",
+  "prompts": {
+    "f769bb25841b7341": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8ef96c91-fc38-48ed-9371-0f2cc54fc1cf",
+        "model": "claude-sonnet-4-5-20250929"
+      },
+      "human_author": "robby <robby.polana+github@gmail.com>",
+      "messages": [],
+      "total_additions": 78,
+      "total_deletions": 2,
+      "accepted_lines": 71,
+      "overriden_lines": 0
+    }
+  }
+}
