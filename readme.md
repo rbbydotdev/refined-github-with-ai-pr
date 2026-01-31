@@ -1,3 +1,94 @@
+# Refined GitHub With AI PR Attribution
+
+<p align="center">
+  <img src="roboctocat.webp" alt="Refined GitHub with AI PR Attribution" title="AI-powered GitHub PR attribution" width="200">
+</p>
+
+> Browser extension that integrates Git AI Standard attribution data into GitHub pull request interfaces
+
+> [!NOTE]
+> **📖 Read the full article:** [GitHub Browser Plugin for AI Contribution Blame in Pull Requests](https://blog.rbby.dev/posts/github-ai-contribution-blame-for-pull-requests/)
+> Learn more about the motivation, implementation details, and future of AI attribution in collaborative development.
+
+## Overview
+
+This project extends [Refined GitHub](https://github.com/refined-github/refined-github) with AI contribution tracking capabilities for GitHub pull requests. It provides line-level AI attribution visualization by reading Git AI Standard metadata from git notes, enabling transparent attribution of AI-generated code contributions in collaborative development workflows.
+
+
+## Screenshots
+
+### Light Mode
+<img src="media/light-scrn.webp" alt="Light mode screenshot showing AI attribution in GitHub PR" title="Light mode - AI contribution indicators" width="800">
+
+### Dark Mode
+<img src="media/dark-scrn.webp" alt="Dark mode screenshot showing AI attribution in GitHub PR" title="Dark mode - AI contribution indicators" width="800">
+
+## Technical Background
+
+### The Git AI Standard
+
+The [Git AI Standard](https://github.com/git-ai-project/git-ai) provides a vendor-agnostic framework for tracking AI-assisted code contributions across the software development lifecycle. It preserves attribution metadata through git operations (merge, rebase, squash, cherry-pick) by storing data in git notes attached to commit refs. This metadata includes:
+
+- Per-line AI contribution attribution
+- Model identifiers and version information
+- Original prompts used for code generation
+- Linkage between prompts and resulting code
+
+### Architecture
+
+This extension augments the GitHub pull request interface by:
+
+1. **Reading Git AI Standard Data**: Extracts AI attribution metadata from git notes refs during PR diff rendering
+2. **Visual Indicators**: Applies syntax highlighting and gutter annotations to AI-contributed lines in the Files Changed view
+3. **Contribution Metrics**: Calculates and displays human vs. AI contribution percentages at the file and PR level
+4. **Contextual Information**: Provides hover states and detail panels showing model information and generation context
+
+### Implementation Details
+
+The plugin operates by:
+- Hooking into GitHub's DOM rendering pipeline to identify code diff elements
+- Fetching git-ai attribution data via GitHub API or local git notes
+- Applying CSS classes and DOM modifications to visualize AI contributions
+- Maintaining compatibility with GitHub's dynamic page updates and UI changes
+
+### Feature Highlights
+
+- **Line-level Attribution**: Visual indicators on each line showing AI vs. human authorship
+- **Contribution Statistics**: Summary metrics showing the percentage breakdown of AI contributions
+- **Model Information**: Display of which AI model (Claude Code, Cursor, Copilot, etc.) generated specific code segments
+- **Toggleable Interface**: Feature can be enabled/disabled through extension options
+- **Full Refined GitHub Feature Set**: Retains all features from the base Refined GitHub extension
+
+## Installation
+
+Detailed installation instructions are available in the project repository. The extension requires:
+- Installation of [git-ai](https://github.com/git-ai-project/git-ai) CLI tool
+- Browser extension installation and authentication
+- Configuration of git-ai in your development workflow
+
+## Status and Limitations
+
+This is a proof-of-concept implementation serving as a beta prototype for AI contribution attribution in GitHub interfaces.
+
+**Key Limitation**: The extension relies on GitHub's HTML structure and CSS classes, which may change without notice and cause breakage. This approach is inherently fragile and requires ongoing maintenance to track GitHub UI updates.
+
+## Use Cases
+
+This tooling is designed for development teams and projects that:
+- Accept AI-assisted contributions and need transparent attribution
+- Want to track AI impact on codebases over time
+- Need to enforce policies around AI contribution percentages
+- Require audit trails linking prompts to generated code
+- Desire retrospective analysis of which code segments were AI-generated
+
+## Contributing
+
+Feedback, issues, and contributions are welcome. This project aims to advance the conversation around AI-assisted development practices and attribution standards. Community input on implementation approaches and feature requirements is encouraged.
+
+----
+
+ORIGINAL README:
+
 # <img src="source/icon.png" width="45" align="left"> Refined GitHub
 
 > Browser extension that simplifies the GitHub interface and adds useful features
